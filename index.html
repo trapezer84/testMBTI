@@ -30,7 +30,18 @@
     <div
       class="container d-flex flex-column min-vh-100 justify-content-center align-items-center"
     >
-      <h1 class="text-center mb-5">MBTI 테스트</h1>
+      <h1 class="text-center mb-5">사주 테스트</h1>
+       <form id="sajuForm" class="w-100" style="max-width: 400px;">
+        <div class="mb-3">
+          <label for="name" class="form-label">성명</label>
+          <input type="text" class="form-control" id="name" placeholder="성명을 입력하세요" required />
+        </div>
+        <div class="mb-3">
+          <label for="birthdate" class="form-label">생년월일</label>
+          <input type="date" class="form-control" id="birthdate" required />
+        </div>
+        <button type="submit" class="btn btn-primary w-100">저장하기</button>
+      </form>
       <div class="text-center">
         <a href="test.html" class="btn btn-primary">시작하기</a>
       </div>
