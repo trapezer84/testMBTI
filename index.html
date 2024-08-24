@@ -22,6 +22,13 @@
       body {
         font-family: S-CoreDream-3Light;
       }
+      .gender-buttons {
+        display: flex;
+        justify-content: space-between;
+      }
+      .gender-buttons button {
+        width: 48%;
+      }      
     </style>
     <title>MBTI</title>
   </head>
@@ -42,15 +49,11 @@
         </div>
          <div class="mb-3">
           <label class="form-label">성별</label>
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="gender" id="male" value="남성" required />
-            <label class="form-check-label" for="male">남성</label>
+          <div class="gender-buttons">
+            <button type="button" class="btn btn-outline-primary" id="male">남성</button>
+            <button type="button" class="btn btn-outline-primary" id="female">여성</button>
           </div>
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="gender" id="female" value="여성" required />
-            <label class="form-check-label" for="female">여성</label>
-          </div>
-        </div>         
+        </div>        
         <button type="submit" href="test.html" class="btn btn-primary w-100">시작하기</button>
       </form>
     </div>
